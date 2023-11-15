@@ -1,0 +1,37 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+#header-navigation-green {
+    border: none;
+    @include font($font, 0.83em, $semibold, normal, $clr-green);
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $clr-green;
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.188);
+    }
+}
+
+.welcome-texte-button {
+    border-radius: 8px;
+    width: fit-content;
+    background-color: $clr-green;
+    @include font($font, 1.3em, $semibold, normal, white);
+    padding: 14px 60px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.188);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;  
+
+    &:hover {
+        transform: scale(0.9);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.188);
+        background-color: white;
+        color: $clr-green;
+    }
+}
