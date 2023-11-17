@@ -241,9 +241,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  row-gap: 50px;
+  row-gap: 26px;
 }
-.menu-left-section {
+.menu-left-section, .menu-left-section-border {
+  padding: 12px;
   display: flex;
   flex-direction: column;
 }
@@ -264,6 +265,25 @@
   font-weight: 400;
   font-style: normal;
   color: #606060;
+}
+.menu-left-section-bestbuy {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: -38px;
+  right: -12px;
+}
+.menu-left-section-bestbuy-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7em;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: #B2D234;
+  padding: 5px 12px;
+}
+.menu-left-section-border {
+  border: 1px solid #B2D234;
 }
 .menu-right {
   display: grid;

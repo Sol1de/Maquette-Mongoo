@@ -101,9 +101,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        row-gap: 50px;
+        row-gap: 26px;
 
         &-section {
+            padding: 12px;
             display:flex;
             flex-direction: column;
 
@@ -119,6 +120,25 @@
             &-paragraph {
                 @include font($font, $size, $normal, normal, $clr-gray);
             }
+
+            &-bestbuy {
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                bottom: -38px;
+                right: -12px;
+
+                &-paragraph {
+                    @include font($font, 0.7em, $normal, normal, white);
+                    background-color: $clr-green;
+                    padding: 5px 12px;
+                }
+            }
+        }
+
+        &-section-border {
+            @extend .menu-left-section;
+            border: 1px solid $clr-green;
         }
     }
 
