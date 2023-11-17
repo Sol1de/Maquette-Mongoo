@@ -7,7 +7,7 @@
     padding: 10px 30px;
     background-color: white;
     border-radius: 8px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         background-color: $clr-green;
@@ -19,12 +19,13 @@
 
 .welcome-texte-button {
     border-radius: 8px;
+    height: fit-content;
     width: fit-content;
     background-color: $clr-green;
     @include font($font, 1.3em, $semibold, normal, white);
     padding: 14px 60px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.188);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
     text-decoration: none;  
 
@@ -34,4 +35,20 @@
         background-color: white;
         color: $clr-green;
     }
+}
+
+.accroche-texte-button {
+    @extend .welcome-texte-button;
+    background-color: white;
+    color: $clr-green;
+
+    &:hover {
+        background-color: $clr-green;
+        color: white;
+    }
+}
+
+.menu-right-button {
+    @extend .welcome-texte-button;
+    background-color: $clr-green;
 }

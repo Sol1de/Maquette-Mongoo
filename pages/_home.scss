@@ -6,7 +6,7 @@
     height: 100vh;
     position: relative;
     display: flex;
-    background: url("assets/img/background section 1.png");
+    background-image: url("assets/img/background section 1.png");
     align-items: center;
     padding-left: 148px;
 
@@ -33,5 +33,117 @@
         top: -20px;
         z-index: 1;
         transform: scale(0.95);
+    }
+}
+
+.accroche {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100%;
+    background-image: url("assets/img/ismael-trevino-NDyuR4Huig8-unsplash.png");
+    background-position: center;
+    background-size: cover;
+
+    &-texte {
+        height: fit-content;
+        width: 630px;
+        margin-right: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $clr-green-trsp;
+        color: white;
+        padding-block: 48px;
+        padding-inline: 68px;
+        gap: 40px;
+
+        &-title {
+            @include font($font, 2.8em, $semibold, normal, white);
+            text-align: center;
+        }
+
+        &-paragraph {
+            @include font($font, $size, $normal, normal, white);
+            text-align: center;
+        }
+    }
+}
+
+.menu {
+    background-image: url("assets/img/background section 3.png");
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    padding-inline: 200px;
+    column-gap: 60px;
+
+    &-heading {
+        padding-block: 70px;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            @include font($font, 2.8em, $semibold, normal, $clr-green);
+        }
+
+        &-paragraph {
+            @include font($font, $size, $normal, normal, $clr-gray);
+            text-align: center;
+        }   
+    }
+
+    &-left {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 50px;
+
+        &-section {
+            display:flex;
+            flex-direction: column;
+
+            &-row {
+                display: flex;
+                justify-content: space-between;
+
+                &-title {
+                    @include font($font, 1.3em, $semibold, normal, $clr-green);
+                }
+            }
+
+            &-paragraph {
+                @include font($font, $size, $normal, normal, $clr-gray);
+            }
+        }
+    }
+
+    &-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+
+        &-title {
+
+            &-green {
+                @include font($font, 3.5em, $normal, italic, $clr-green);
+                rotate: -9deg;
+            }
+
+            &-blue {
+                @include font($font, 3.5em, $normal, italic, $clr-blue);
+                rotate: -9deg;
+            }
+        }
+
+        &-paragraph {
+            @include font($font, $size, $normal, normal, $clr-gray);
+            text-align: center;
+        }
     }
 }
