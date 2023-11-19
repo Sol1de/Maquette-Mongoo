@@ -66,3 +66,30 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .header {
+        
+
+        &-navigation {
+            display: none;
+        }
+
+        &-slogan {
+            height: 100%;
+
+            &-title {
+                @include font($font, 4.5em, $medium, normal, white);
+            }
+
+            &-rotate {
+                @include font($font, 1.5em, $normal, italic, white);
+                padding-top: 15px;
+            }
+        }
+
+        &-social {
+            margin-right: 0px;
+            justify-content: center;
+        }
+    }
+}

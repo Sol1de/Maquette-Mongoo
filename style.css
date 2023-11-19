@@ -101,6 +101,18 @@
   color: white;
 }
 
+@media screen and (max-width: 1100px) {
+  .footer {
+    padding: 20px;
+    justify-content: center;
+  }
+  .footer > img {
+    width: 150px;
+  }
+  .footer-container {
+    display: none;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -169,6 +181,33 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1100px) {
+  .header-navigation {
+    display: none;
+  }
+  .header-slogan {
+    height: 100%;
+  }
+  .header-slogan-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 4.5em;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+  }
+  .header-slogan-rotate {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    padding-top: 15px;
+  }
+  .header-social {
+    margin-right: 0px;
+    justify-content: center;
+  }
+}
 .welcome {
   overflow: hidden;
   height: 100vh;
@@ -496,6 +535,95 @@
 .form-container-infos-submit {
   width: fit-content;
   align-self: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .welcome {
+    padding: 20px;
+  }
+  .welcome-image {
+    display: none;
+  }
+  .welcome-texte {
+    width: 100%;
+    align-items: center;
+  }
+  .welcome-texte-title {
+    text-align: center;
+  }
+  .welcome-texte-paragraph {
+    width: 100%;
+    text-align: center;
+  }
+  .accroche {
+    justify-content: center;
+  }
+  .accroche-texte {
+    margin-right: 0px;
+    padding: 20px;
+  }
+  .accroche-texte-title {
+    font-size: 1.5em;
+  }
+  .menu {
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+    padding-inline: 20px;
+  }
+  .menu-heading {
+    grid-column: 1/2;
+    gap: 20px;
+  }
+  .menu-heading-title {
+    text-align: center;
+  }
+  .menu-right {
+    gap: 20px;
+  }
+  .menu-right-title-green {
+    font-size: 3em;
+  }
+  .menu-right-title-blue {
+    font-size: 3em;
+  }
+  .preparation {
+    height: fit-content;
+  }
+  .preparation-container {
+    flex-direction: column;
+  }
+  .preparation-container-box {
+    padding: 20px;
+  }
+  .preparation-container-box-horizontal {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .preparation-container-box-title {
+    font-size: 2em;
+  }
+  .form {
+    height: fit-content;
+    padding-block: 20px;
+  }
+  .form-image {
+    display: none;
+  }
+  .form-container {
+    padding-right: 0px;
+  }
+  .form-container-text-title {
+    text-align: center;
+  }
+  .form-container-text-paragraph {
+    text-align: center;
+  }
+  .form-container-infos-horizontal {
+    flex-direction: column;
+  }
+  .form-container-infos-horizontal > div {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
