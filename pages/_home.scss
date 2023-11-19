@@ -310,37 +310,3 @@
         }
     }
 }
-
-.footer {
-    display: flex;
-    gap: 80px;
-    background-color: $clr-green;
-    padding: 67px 40px;
-
-    & > img {
-        object-fit: contain;
-    }
-
-    &-container {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-
-        &-content {
-            display: flex;
-            flex-direction: column;
-            gap: 26px;
-            align-items: center;
-
-            &-title {
-                @include font($font, 1.5em, $semibold, normal, white);
-            }
-
-            &-list {
-                list-style: none;
-                text-align: center;
-                @include font($font, $size, $normal, normal, white);
-            }
-        }
-    }
-}
