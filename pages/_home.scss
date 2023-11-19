@@ -219,3 +219,127 @@
         }
     }
 }
+
+.form {
+    background-image: url("assets/img/Grille de répétition 3.png");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    gap: 64px;
+    padding-inline: 40px;
+
+    &-image {
+        height: auto;
+        width: 524px;
+        object-fit: contain;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+        padding-right: 110px;
+
+        &-text {
+
+            &-title {
+                @include font($font, 2.8em, $semibold, normal, $clr-green);
+            }
+    
+            &-paragraph {
+                @include font($font, $size, $normal, normal, $clr-gray);
+            }
+        }
+
+        &-infos {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            &-vertical {
+                display: flex;
+                flex-direction: column;
+
+                &-placeholder {
+                    @include font($font, 1.3em, $normal, italic, $clr-green);
+                }
+
+                &-input {
+                    height: 45px;
+                    outline: none;
+                    border: 1px solid rgb(78, 78, 78, 30%);
+                }
+
+                &-textarea {
+                    height: 135px;
+                    resize: none;
+                    outline: none;
+                    border: 1px solid rgb(78, 78, 78, 30%);
+                }
+            }
+
+            &-horizontal {
+                display: flex;
+                width: 100%;
+                gap: 16px;
+
+                & > div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                }
+
+                &-placeholder {
+                    @include font($font, 1.3em, $normal, italic, $clr-green);
+                }
+
+                &-input {
+                    @extend .form-container-infos-vertical-input;
+                }
+            }
+
+            &-submit {
+                width: fit-content;
+                align-self: center;
+            }
+
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    gap: 80px;
+    background-color: $clr-green;
+    padding: 67px 40px;
+
+    & > img {
+        object-fit: contain;
+    }
+
+    &-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            align-items: center;
+
+            &-title {
+                @include font($font, 1.5em, $semibold, normal, white);
+            }
+
+            &-list {
+                list-style: none;
+                text-align: center;
+                @include font($font, $size, $normal, normal, white);
+            }
+        }
+    }
+}

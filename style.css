@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.188);
 }
 
-.welcome-texte-button, .menu-right-button, .accroche-texte-button {
+.welcome-texte-button, .form-container-infos-submit, .menu-right-button, .accroche-texte-button {
   border-radius: 8px;
   height: fit-content;
   width: fit-content;
@@ -39,7 +40,7 @@
   cursor: pointer;
   text-decoration: none;
 }
-.welcome-texte-button:hover, .menu-right-button:hover, .accroche-texte-button:hover {
+.welcome-texte-button:hover, .form-container-infos-submit:hover, .menu-right-button:hover, .accroche-texte-button:hover {
   transform: scale(0.9);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.188);
   background-color: white;
@@ -57,6 +58,10 @@
 
 .menu-right-button {
   background-color: #B2D234;
+}
+
+.form-container-infos-submit {
+  border: none;
 }
 
 .header {
@@ -368,6 +373,128 @@
   font-style: normal;
   color: white;
   text-align: center;
+}
+
+.form {
+  background-image: url("assets/img/Grille de répétition 3.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  height: 100vh;
+  gap: 64px;
+  padding-inline: 40px;
+}
+.form-image {
+  height: auto;
+  width: 524px;
+  object-fit: contain;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  padding-right: 110px;
+}
+.form-container-text-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8em;
+  font-weight: 600;
+  font-style: normal;
+  color: #B2D234;
+}
+.form-container-text-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #606060;
+}
+.form-container-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.form-container-infos-vertical {
+  display: flex;
+  flex-direction: column;
+}
+.form-container-infos-vertical-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: italic;
+  color: #B2D234;
+}
+.form-container-infos-vertical-input, .form-container-infos-horizontal-input {
+  height: 45px;
+  outline: none;
+  border: 1px solid rgba(78, 78, 78, 0.3);
+}
+.form-container-infos-vertical-textarea {
+  height: 135px;
+  resize: none;
+  outline: none;
+  border: 1px solid rgba(78, 78, 78, 0.3);
+}
+.form-container-infos-horizontal {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+.form-container-infos-horizontal > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.form-container-infos-horizontal-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: italic;
+  color: #B2D234;
+}
+.form-container-infos-submit {
+  width: fit-content;
+  align-self: center;
+}
+
+.footer {
+  display: flex;
+  gap: 80px;
+  background-color: #B2D234;
+  padding: 67px 40px;
+}
+.footer > img {
+  object-fit: contain;
+}
+.footer-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.footer-container-content {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+}
+.footer-container-content-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+.footer-container-content-list {
+  list-style: none;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

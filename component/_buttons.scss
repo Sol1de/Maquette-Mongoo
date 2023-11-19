@@ -52,3 +52,8 @@
     @extend .welcome-texte-button;
     background-color: $clr-green;
 }
+
+.form-container-infos-submit {
+    @extend .welcome-texte-button;
+    border: none;
+}
